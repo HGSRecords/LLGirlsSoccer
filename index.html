@@ -257,6 +257,26 @@ h3.sub {
 .cl { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
 .ct { font-size: 1.15rem; font-weight: 700; line-height: 1.2; }
 
+.league-champ {
+  margin-top: 0.75rem;
+  background: var(--tint);
+  border: 1px solid var(--rule);
+  padding: 1.1rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+}
+.league-champ .chip { margin: 0; }
+.lc-name {
+  font-family: var(--display);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-size: clamp(2rem, 8vw, 3rem);
+  line-height: 1;
+}
+
 /* sections */
 .sec { padding-block: 2.5rem 1rem; border-top: 1px solid var(--rule); scroll-margin-top: 3.5rem; }
 .sec-head { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
@@ -378,6 +398,10 @@ body.filtering .numeral, body.filtering .champline { display: none; }
 <li><span class="cn">3</span><span class="cl">Section 3</span><span class="ct">Lancaster Catholic</span></li>
 <li><span class="cn">4</span><span class="cl">Section 4</span><span class="ct">Pequea Valley</span></li>
       </ul>
+      <div class="league-champ">
+        <span class="chip">League champion</span>
+        <span class="lc-name">Hempfield</span>
+      </div>
     </section>
 
 
